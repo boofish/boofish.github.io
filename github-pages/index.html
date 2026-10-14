@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html data-page-node-id="IgXnTmQPIMerBmKm5SUf1J" lang="zh-CN">
+<head data-page-node-id="u1Lfzs5hfME1p8qRgwPXY2">
+<meta data-page-node-id="7nIRaac0PtYlw2k2nZ1V5p" charset="UTF-8">
+<meta data-page-node-id="aBwzcaOMtEkE02AafCktmc" content="width=device-width, initial-scale=1.0" name="viewport">
+<title data-page-node-id="Wfqs2o1mHhqBqk4UwtIiIX" data-pnid-children="Hz41WpH1OfBrb55u7yB74R">方栋梁 · 个人主页 | 中国科学院信息工程研究所</title>
+<meta data-page-node-id="XwQ9HbVN8DSl5z4tWmr9XO" content="方栋梁，博士，中国科学院信息工程研究所博后-预聘副研究员、硕士生导师，入选中国科学院信息工程研究所优才计划（B类）-青年预聘副高。研究方向：软硬件控制系统逆向工程与安全评测、传感器/执行器攻防测试、基于芯片特性的固件安全增强。" name="description">
+<style data-page-node-id="WiqBcIqNIjvTMBjosFgDNK" data-pnid-children="Re41Cc3oiaRRKsdgiIAA55">
+  :root{
+    --primary:#16437e;
+    --primary-deep:#0e2f52;
+    --primary-light:#2563a8;
+    --accent:#c9a227;
+    --ink:#1f2937;
+    --muted:#64748b;
+    --bg:#f6f8fb;
+    --card:#ffffff;
+    --line:#e5e9f0;
+    --tag-a-bg:#fdf6e3;
+    --tag-a-tx:#9a6b00;
+    --tag-b-bg:#eef2f7;
+    --tag-b-tx:#475569;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI","Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--primary-light);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* ============ NAV ============ */
+  .nav{
+    position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);transition:box-shadow .3s;
+  }
+  .nav.scrolled{box-shadow:0 4px 20px rgba(14,47,82,.08)}
+  .nav-inner{max-width:1080px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between}
+  .nav-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--primary);letter-spacing:.5px}
+  .nav-brand .dot{width:9px;height:9px;border-radius:2px;background:linear-gradient(135deg,var(--primary),var(--accent));transform:rotate(45deg)}
+  .nav-links{display:flex;gap:4px;flex-wrap:wrap}
+  .nav-links a{color:#3b4a5f;font-size:14px;padding:6px 12px;border-radius:8px;transition:all .2s}
+  .nav-links a:hover{color:var(--primary);background:#eef3fa;text-decoration:none}
+  .nav-toggle{display:none;background:none;border:none;font-size:22px;color:var(--primary);cursor:pointer;padding:4px 8px}
+
+  /* ============ HERO ============ */
+  .hero{
+    position:relative;color:#fff;overflow:hidden;
+    background:linear-gradient(135deg,#0b2645 0%,#16437e 55%,#1e5ba6 100%);
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;opacity:.12;
+    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><path d="M0 32h64M32 0v64" stroke="%23ffffff" stroke-width="1"/></svg>');
+    mask-image:radial-gradient(ellipse at 70% 20%,#000 0%,transparent 65%);
+    -webkit-mask-image:radial-gradient(ellipse at 70% 20%,#000 0%,transparent 65%);
+  }
+  .hero-inner{position:relative;max-width:1080px;margin:0 auto;padding:72px 24px 64px;display:flex;gap:48px;align-items:center}
+  .hero-photo-wrap{flex:0 0 232px;position:relative}
+  .hero-photo-wrap::before{
+    content:"";position:absolute;inset:-14px;border:2px solid rgba(255,255,255,.35);
+    border-radius:14px;transform:rotate(-3deg);
+  }
+  .hero-photo-wrap::after{
+    content:"";position:absolute;inset:-7px;border:2px solid rgba(201,162,39,.6);
+    border-radius:10px;transform:rotate(2deg);
+  }
+  .hero-photo{
+    width:232px;height:310px;object-fit:cover;border-radius:8px;display:block;
+    box-shadow:0 18px 50px rgba(0,0,0,.4);position:relative;
+  }
+  .hero-info{flex:1;min-width:0}
+  .hero-greet{font-size:14px;letter-spacing:3px;color:#a8c4e8;text-transform:uppercase;margin-bottom:8px}
+  .hero-name{font-size:46px;font-weight:800;letter-spacing:6px;margin-bottom:14px}
+  .hero-name .en{font-size:18px;font-weight:400;letter-spacing:1px;color:#a8c4e8;display:block;margin-top:2px}
+  .hero-title{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+  .hero-title .chip{
+    background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
+    padding:4px 14px;border-radius:999px;font-size:13.5px;color:#e8f0fa;
+  }
+  .hero-affil{font-size:16px;color:#dbe7f5;margin-bottom:6px}
+  .hero-affil b{color:#fff;font-weight:600}
+  .hero-line{width:56px;height:3px;background:var(--accent);border-radius:2px;margin:18px 0}
+  .hero-bio{font-size:15px;color:#c9d8ec;max-width:640px}
+  .hero-contact{display:flex;flex-wrap:wrap;gap:20px;margin-top:24px}
+  .hero-contact a,.hero-contact span{
+    display:inline-flex;align-items:center;gap:7px;font-size:14px;color:#dbe7f5;
+  }
+  .hero-contact svg{width:15px;height:15px;stroke:#8fb4de;flex:0 0 auto}
+  .hero-contact a:hover{color:#fff;text-decoration:none}
+
+  /* ============ STATS ============ */
+  .stats{background:#fff;border-bottom:1px solid var(--line)}
+  .stats-inner{max-width:1080px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .stat{text-align:center;padding:22px 8px;position:relative}
+  .stat+.stat::before{content:"";position:absolute;left:0;top:26%;height:48%;width:1px;background:var(--line)}
+  .stat .num{font-size:30px;font-weight:800;color:var(--primary);font-variant-numeric:tabular-nums}
+  .stat .num em{font-style:normal;font-size:17px;color:var(--accent);margin-left:2px}
+  .stat .label{font-size:13px;color:var(--muted);margin-top:2px}
+
+  /* ============ SECTION ============ */
+  .section{padding:72px 0}
+  .section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{margin-bottom:40px}
+  .sec-head .sub{font-size:12.5px;letter-spacing:3px;color:var(--accent);text-transform:uppercase;font-weight:600}
+  .sec-head h2{font-size:29px;font-weight:800;color:var(--primary-deep);letter-spacing:1px;margin:4px 0 10px}
+  .sec-head .bar{width:48px;height:3.5px;border-radius:2px;background:linear-gradient(90deg,var(--primary),var(--accent))}
+
+  /* ---- 研究方向 ---- */
+  .rd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .rd-card{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 24px;
+    transition:transform .25s,box-shadow .25s,border-color .25s;
+  }
+  .rd-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(14,47,82,.1);border-color:#c8d6ea}
+  .rd-icon{
+    width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,#eef3fa,#e3edf9);margin-bottom:14px;
+  }
+  .rd-icon svg{width:22px;height:22px;stroke:var(--primary)}
+  .rd-card h3{font-size:16.5px;color:var(--primary-deep);margin-bottom:8px;font-weight:700}
+  .rd-card p{font-size:13.8px;color:var(--muted)}
+  .rd-sub{margin-top:12px;padding-top:11px;border-top:1px dashed var(--line)}
+  .rd-sub span{
+    display:inline-block;font-size:11.8px;color:#5b6a80;background:#f1f5f9;
+    border-radius:5px;padding:2px 8px;margin:5px 5px 0 0;line-height:1.6;
+  }
+
+  /* ---- 代表成果 ---- */
+  .hl-list{display:grid;gap:18px}
+  .hl-card{
+    display:flex;gap:22px;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:26px 28px;transition:transform .25s,box-shadow .25s;
+  }
+  .hl-card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(14,47,82,.09)}
+  .hl-no{
+    flex:0 0 46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    font-size:18px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-light));
+  }
+  .hl-body h3{font-size:17px;color:var(--primary-deep);margin-bottom:8px;font-weight:700}
+  .hl-body p{font-size:14.2px;color:#43536a}
+  .hl-body .kw{display:inline-block;background:#eef3fa;color:var(--primary);font-size:12.5px;padding:1px 9px;border-radius:6px;margin:8px 4px 0 0}
+
+  /* ---- 项目 ---- */
+  .proj-list{display:grid;gap:12px}
+  .proj-item{
+    display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:16px 22px;transition:border-color .2s,box-shadow .2s;
+  }
+  .proj-item:hover{border-color:#c8d6ea;box-shadow:0 8px 22px rgba(14,47,82,.07)}
+  .proj-name{font-size:15.2px;font-weight:600;color:var(--ink);flex:1;min-width:0}
+  .proj-type{font-size:12.5px;color:var(--muted);background:#f1f5f9;border-radius:6px;padding:2px 10px;white-space:nowrap}
+  .proj-role{font-size:12.5px;color:#fff;background:var(--primary-light);border-radius:6px;padding:2px 10px;white-space:nowrap}
+  .proj-role.member{background:#64748b}
+  .proj-date{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  /* ---- 学习经历 ---- */
+  .timeline{position:relative;padding-left:26px}
+  .timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--primary),#c8d6ea)}
+  .tl-item{position:relative;padding:0 0 30px 22px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{
+    content:"";position:absolute;left:-26px;top:7px;width:14px;height:14px;border-radius:50%;
+    background:#fff;border:3.5px solid var(--primary);box-shadow:0 0 0 4px rgba(22,67,126,.12);
+  }
+  .tl-date{font-size:13.5px;font-weight:700;color:var(--primary-light);font-variant-numeric:tabular-nums;letter-spacing:.5px}
+  .tl-school{font-size:17px;font-weight:700;color:var(--primary-deep);margin:2px 0}
+  .tl-detail{font-size:14px;color:var(--muted)}
+  .tl-detail .medal{color:#9a6b00}
+
+  /* ---- 论文 ---- */
+  .pub-list{display:grid;gap:14px;counter-reset:pub}
+  .pub-item{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px;
+    position:relative;transition:transform .2s,box-shadow .2s;
+  }
+  .pub-item:hover{transform:translateX(4px);box-shadow:0 8px 22px rgba(14,47,82,.07)}
+  .pub-item::before{
+    counter-increment:pub;content:"[" counter(pub) "]";
+    position:absolute;left:-14px;top:20px;font-size:13px;font-weight:700;color:#8aa3c4;
+  }
+  .pub-title{font-size:15.5px;font-weight:700;color:var(--ink);margin-bottom:6px}
+  .pub-title .zh{font-size:15px}
+  .pub-authors{font-size:13.2px;color:var(--muted);margin-bottom:8px;line-height:1.7}
+  .pub-authors .me{color:var(--primary);font-weight:700}
+  .pub-meta{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+  .pub-venue{font-size:13.5px;font-weight:600;color:var(--primary-deep)}
+  .pub-year{font-size:12.5px;color:var(--muted)}
+  .tag{font-size:11.5px;font-weight:700;border-radius:6px;padding:1px 9px;letter-spacing:.5px}
+  .tag.a{background:var(--tag-a-bg);color:var(--tag-a-tx);border:1px solid #ecd9a0}
+  .tag.b{background:var(--tag-b-bg);color:var(--tag-b-tx);border:1px solid #d7dfeb}
+  .pub-note{font-size:12.5px;color:#8a94a6;margin-top:8px}
+
+  /* ---- 兼职 ---- */
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .svc-card{
+    display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:20px 24px;transition:transform .2s,box-shadow .2s;
+  }
+  .svc-card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(14,47,82,.08)}
+  .svc-icon{width:40px;height:40px;border-radius:10px;flex:0 0 40px;display:flex;align-items:center;justify-content:center;background:#eef3fa}
+  .svc-icon svg{width:20px;height:20px;stroke:var(--primary)}
+  .svc-name{font-size:15px;font-weight:600;color:var(--ink)}
+  .svc-org{font-size:13px;color:var(--muted)}
+
+  /* ============ FOOTER ============ */
+  .footer{background:var(--primary-deep);color:#b9c9dd;padding:44px 0 36px;margin-top:0}
+  .footer-inner{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
+  .footer h3{color:#fff;font-size:17px;letter-spacing:1px;margin-bottom:12px}
+  .footer .fc{display:flex;align-items:center;gap:9px;font-size:14px;margin-bottom:7px}
+  .footer .fc svg{width:15px;height:15px;stroke:#7fa3cf;flex:0 0 auto}
+  .footer a{color:#cfdcee}
+  .footer a:hover{color:#fff}
+  .footer .copy{font-size:12.5px;color:#7d90a8;padding-top:8px}
+
+  /* ============ 动画 ============ */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ============ 响应式 ============ */
+  @media (max-width:920px){
+    .hero-inner{flex-direction:column;text-align:center;padding:52px 24px 56px;gap:36px}
+    .hero-photo-wrap{flex:none}
+    .hero-title,.hero-contact{justify-content:center}
+    .hero-bio{margin:0 auto}
+    .rd-grid{grid-template-columns:repeat(2,1fr)}
+    .stats-inner{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(3)::before{display:none}
+    .svc-grid{grid-template-columns:1fr}
+    .nav-links{
+      display:none;position:absolute;top:60px;left:0;right:0;background:#fff;
+      border-bottom:1px solid var(--line);padding:10px 20px;flex-direction:column;
+    }
+    .nav-links.open{display:flex}
+    .nav-toggle{display:block}
+  }
+  @media (max-width:600px){
+    .hero-name{font-size:34px;letter-spacing:3px}
+    .rd-grid{grid-template-columns:1fr}
+    .proj-item{flex-wrap:wrap;gap:8px}
+    .proj-name{flex-basis:100%}
+    .pub-item{margin-left:14px}
+    .pub-item::before{left:-4px }
+    .hl-card{flex-direction:column;gap:14px}
+    .stat+.stat::before{display:none}
+  }
+
+  /* ============ 打印 ============ */
+  @media print{
+    .nav,.nav-toggle{display:none}
+    .hero{background:var(--primary-deep) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{background:#fff}
+    .section{padding:36px 0}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body data-page-node-id="q68Mn2x68t4htRzDZ1mYd4">
+
+<!--pnid:Qko1wQeN6Kh4DoYZwQjRtv--><!-- ================= 导航 ================= -->
+<nav data-page-node-id="hOBTagsxWOa3jFVhwnL9KF" class="nav" id="nav">
+  <div data-page-node-id="p00UEOzzagLnfx0F3UdvIk" class="nav-inner">
+    <a data-page-node-id="DM15ibrPcoDHBD1DSWWbgS" class="nav-brand" href="#top"><span data-page-node-id="IQBlDmlgef565fj7j4O49q" class="dot"></span><!--pnid:7LQhXLcJUBqYDYqpFAhCzh-->方栋梁 · 个人主页</a>
+    <button data-page-node-id="o1zA0rrC1yrLF1eUoKvNMh" aria-label="菜单" class="nav-toggle" id="navToggle"><!--pnid:qaRkDn3DXkN5d6u9BPI66I-->☰</button>
+    <div data-page-node-id="WGDJhC3d9syxBPcVDe9TjF" class="nav-links" id="navLinks">
+      <a data-page-node-id="WZE0XCcbVyKRqdGcIsHYE8" href="#about"><!--pnid:gAZOhEXuHCMxpHZuNMa631-->简介</a>
+      <a data-page-node-id="nbXPdWlYuUnMZlIKbgdk1o" href="#research"><!--pnid:JZwl6siQwIbzEz5a3BFB00-->研究方向</a>
+      <a data-page-node-id="xJufB8yIYyA56WhFBjq3rj" href="#highlights"><!--pnid:FtDq5hrnX3XgKef6ZbriAu-->代表成果</a>
+      <a data-page-node-id="GMLGhPRGrhiKp7hVEJ5JOl" href="#projects"><!--pnid:5NNvNK0V1xmmyqtlhpQVyv-->科研项目</a>
+      <a data-page-node-id="15J9980sJvR0lQGVs2nBFw" href="#education"><!--pnid:aDBxId9NZvNvyP6aUOkuO8-->学习经历</a>
+      <a data-page-node-id="6GjwMYQxyDn43IJb6ds11j" href="#pubs"><!--pnid:qePNbRooOkUyQN5uESj71K-->学术论文</a>
+      <a data-page-node-id="Ll3yMhBncQ3t5dnVnt0O80" href="#contact"><!--pnid:8IH8VLgNKZlMe2vXguwdP5-->联系方式</a>
+    </div>
+  </div>
+</nav>
+
+<!--pnid:N97NyFVRP1QO2fPcESsb07--><!-- ================= HERO ================= -->
+<header data-page-node-id="JocTJhQjrsfJoBGMn21Z36" class="hero" id="top">
+  <div data-page-node-id="KGxklMsDUu5Q8G60JKZH3H" class="hero-inner">
+    <div data-page-node-id="gPaoqybidNtKLUErxpEHTh" class="hero-photo-wrap">
+      <img data-page-node-id="56tZknRYjctiDlrNNJpHFy" alt="方栋梁照片" class="hero-photo" src="data:image/jpeg;base64,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">
+    </div>
+    <div data-page-node-id="8HXHZwDa1F6SRPcB8GUE0p" class="hero-info">
+      <div data-page-node-id="AucJ6NE0nAYNgxn8BOj11k" class="hero-greet"><!--pnid:AvqqY2tOzj2WQPQAKKBkP3-->FANG DONGLIANG · PERSONAL HOMEPAGE</div>
+      <h1 data-page-node-id="s8iz44klgyMHLlwNJvZHlK" class="hero-name"><!--pnid:97z7u5E6Fyatkr7SO14st8-->方栋梁<span data-page-node-id="AXGj9jY6TluE6uii2zjgmX" class="en"><!--pnid:WS5rx87wIs5wQyD6fo98Yf-->Fang Dongliang, Ph.D.</span></h1>
+      <div data-page-node-id="V6ia0G2K0Br4RqqewsP42P" class="hero-title">
+        <span data-page-node-id="ZFClcXyTvBsFgc77bbFfMO" class="chip"><!--pnid:Cc10N5S0BB5zok9JNgNx4J-->博士 · 博后-预聘副研究员</span>
+        <span data-page-node-id="dtac32WTzVFRs58qxxTa97" class="chip"><!--pnid:rrQW1Sz1JJTHClesWdqrVZ-->硕士生导师</span>
+        <span data-page-node-id="t5fKg8pFyl9mr0oqBMlCbH" class="chip"><!--pnid:HJpDL1fmvGCND9VI2ihADX-->优才计划（B类）· 青年预聘副高</span>
+      </div>
+      <div data-page-node-id="5tszOuxOqENCg9kjy8rRZT" class="hero-affil"><b data-page-node-id="tHXQRYqE8KeTGHy5nVFV5V"><!--pnid:tsghoqtkT3jwsV33yOLvwy-->中国科学院信息工程研究所</b></div>
+      <div data-page-node-id="DCbWIMjT1Ze2PGbZZ4gEsl" class="hero-affil" style="font-size:14px"><!--pnid:9Ah6e3tav7P2kK2DlEPX6q-->Institute of Information Engineering, Chinese Academy of Sciences</div>
+      <div data-page-node-id="HP8MJkRvLewYhkPVsoWqfX" class="hero-line"></div>
+      <p data-page-node-id="L2iXdhKYVZ2kLVJYnlH50R" class="hero-bio"><!--pnid:tlzNBEIPJFhuCvBhsScm7P-->
+        致力于构建<b data-page-node-id="QKNLQs0LKGHgvABEYAFUsh" style="color:#fff"><!--pnid:vRRqQm7tBKPbVdddy2UbCm-->安全可靠的软硬件控制系统</b><!--pnid:PcKDUAz2WcePK2rEXt1dYk-->，应用领域涵盖工业制造、无人系统、具身智能等。擅长软硬件控制系统逆向工程与安全评测、传感器/执行器攻防测试、基于芯片特性的固件安全增强等技术，并围绕大模型技术开展微调训练、思维链数据构造、多智能体协同等研究。
+      </p>
+      <div data-page-node-id="1wc04ZnNwoLaIpoa6WodoG" class="hero-contact">
+        <a data-page-node-id="Y8x7QtRMOv0IBKyK08v957" href="mailto:fangdongliang@iie.ac.cn">
+          <svg data-page-node-id="9NKgxHby6hXg9rSbPyyzOd" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect data-page-node-id="TU6EUkkKOV8bxhdLv4qsX3" height="16" rx="2" width="20" x="2" y="4"/><path data-page-node-id="dce6ttQZccDrnpALeNXp46" d="m22 7-10 6L2 7"/></svg><!--pnid:m0QfAS51ypSk7ffRGZ4p4U-->
+          fangdongliang@iie.ac.cn
+        </a>
+        <span data-page-node-id="PdjiVpXJDZTpamoyFAD9O5">
+          <svg data-page-node-id="pDLcOPPi13rtA8qOWZYG0n" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path data-page-node-id="FAj5lXVmPX7n5JgMRVvbkl" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle data-page-node-id="bVe2O9PVnw4eC2fFvrhLBo" cx="12" cy="10" r="3"/></svg><!--pnid:GQkD6ZsePyPSvwvwrVTryR-->
+          北京市海淀区树村路19号（100085）
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--pnid:5PgyTrn7GWwvX196TdaFR4--><!-- ================= 数据统计 ================= -->
+<div data-page-node-id="NXePW8Ax63f0DEbs4dx7gy" class="stats">
+  <div data-page-node-id="AGPgDK3hblbGSEV8Muca69" class="stats-inner">
+    <div data-page-node-id="NlXGrgoc037JbKUVjQBCFB" class="stat"><div data-page-node-id="yUhKYHLEB7ArBr2ayi4tsq" class="num"><!--pnid:iRXqZu1pHsDxnezFmyk8LM-->20<em data-page-node-id="gZpS4L0en3xiEoTu3jg7Sd"><!--pnid:C5dX9k0TqcXoskBw5fMWFk-->+</em></div><div data-page-node-id="7LIJcKMuHEXXM7P6tPCv9S" class="label"><!--pnid:i5PtNcZ9lqmARHLTjjRHIk-->学术论文（NDSS/ASPLOS/TDSC 等）</div></div>
+    <div data-page-node-id="4GWZ0lD5D312d85q09nb8c" class="stat"><div data-page-node-id="qacbds3cMEi3qkiZPGuSQX" class="num"><!--pnid:YVi4CXvnaolAYH1SSJmxp2-->10</div><div data-page-node-id="tCKMjSz8RdfJDs2ETiySoH" class="label"><!--pnid:Ax6ykEUMQZLW8su4TZKQKE-->近五年 CCF-A 类代表论文</div></div>
+    <div data-page-node-id="r1zKfStbkNcEtllEroxDS3" class="stat"><div data-page-node-id="e0wbWp2JeE9voitB8CYuxq" class="num"><!--pnid:FBe3v8dTYLQDZinOSAesYX-->7</div><div data-page-node-id="3B9yiefbpHH0L7Tzv7d19Z" class="label"><!--pnid:4pag7EFkrOCR8tdKdEu0x0-->主持 / 负责科研项目</div></div>
+    <div data-page-node-id="3DxKngID5yf5DoaMXEW28U" class="stat"><div data-page-node-id="mZcbiIs6j45oEtCVir22U9" class="num"><!--pnid:kjyehpsCEQW4Q9qRzMxq3S-->50<em data-page-node-id="OwYG2UaJIoqcPhEPBwkThv"><!--pnid:uIXbHWutYtbWnaxpkVUbRT-->+</em></div><div data-page-node-id="s8MjofjYCZ90GmwHq7UMMW" class="label"><!--pnid:R38SLF2DLkT0Rr94vlC2ix-->系统分析典型工控协议</div></div>
+  </div>
+</div>
+
+<!--pnid:4albsztO2FUpkeKPwx7ubK--><!-- ================= 简介 ================= -->
+<section data-page-node-id="bLT64bQpP9OxIVx4GxWoYm" class="section" id="about">
+  <div data-page-node-id="UER6QpGO7OMK8H7xzyOI7R" class="container">
+    <div data-page-node-id="GybTGi9iG7fnEpX25x0Uad" class="sec-head reveal">
+      <div data-page-node-id="u2flB6H0ff8RmhKlHKQXS6" class="sub"><!--pnid:zWjKwOWqN50hKC9pIQlLL3-->About Me</div>
+      <h2 data-page-node-id="r9FVng4Ey8bFoNjeN0ubba"><!--pnid:uzdNrbxFavayz2SGpnp31P-->个人简介</h2>
+      <div data-page-node-id="6Dk753Zki1prAMhRFUhILd" class="bar"></div>
+    </div>
+    <div data-page-node-id="WPasxlSV9hxQ8Zcc7l9Fr0" class="reveal" style="background:var(--card); border:1px solid var(--line); border-radius:14px; padding:30px 34px; font-size:15px; color:#37434f; line-height:2">
+      <p data-page-node-id="f7KSAQ2IjFVPh7a98EzMws"><!--pnid:93N8rjz7gbRZrlkXd4qd0i-->
+        方栋梁，博士，中国科学院信息工程研究所<b data-page-node-id="aLaflZLgByey1DxpYdSi80" style="color:var(--primary)"><!--pnid:lHcDpbnGAKIlCTxCyHCQnf-->博后-预聘副研究员、硕士生导师</b><!--pnid:Lzs88NtG2VC2e7fngmUYne-->，入选<b data-page-node-id="aLaflZLgByey1DxpYdSi82" style="color:var(--primary)"><!--pnid:93N8rjz7gbRZrlkXd4qd12-->中国科学院信息工程研究所优才计划（B类）-青年预聘副高</b><!--pnid:93N8rjz7gbRZrlkXd4qd13-->。研究目标致力于构建安全可靠的软硬件控制系统，应用领域涵盖<b data-page-node-id="EVzemlz2aAWdEIhzVJps8i"><!--pnid:nZsrym4FBDcMo5RtybzTR6-->工业制造、无人系统、具身智能</b><!--pnid:p9Z75pycdadUZuKxqPqkeQ-->等，擅长软硬件控制系统逆向工程与安全评测、传感器/执行器攻防测试、基于芯片特性的固件安全增强等技术。相关成果在 <b data-page-node-id="EULmO22BW86jT4rRT4NSaj" style="color:var(--primary)"><!--pnid:pTw0OlQrmrFASJNgdO3XKk-->NDSS、ASPLOS、TDSC、ISSTA、TIFS</b><!--pnid:74RWBmqjabh5IdijVdHN3m--> 等国内外高质量会议和期刊上发表学术论文 20 余篇。近年来，围绕大模型技术开展了一系列研究，包括<b data-page-node-id="As6Aj2mBKinWaVzHg9BFgU"><!--pnid:XqBsPmalEWvWUWe3IYJ3q9-->定制领域的大模型微调训练、思维链数据构造、多智能体协同工作</b><!--pnid:JqoByw0MAbixtaDEy2tuWq-->等，并探索大模型赋能程序逆向、漏洞挖掘、渗透测试等方向。<b data-page-node-id="f7KSAQ2IjFVPh7a98EzMw1" style="color:var(--primary)"><!--pnid:93N8rjz7gbRZrlkXd4qd09-->欢迎学界与业界同行前来交流合作</b><!--pnid:93N8rjz7gbRZrlkXd4qd10-->，联系邮箱：<a data-page-node-id="f7KSAQ2IjFVPh7a98EzMw2" href="mailto:fangdongliang@iie.ac.cn"><!--pnid:93N8rjz7gbRZrlkXd4qd11-->fangdongliang@iie.ac.cn</a>。担任中国科学院大学本科部 2411 班青年班主任、CCF 网络与系统安全专委会执行委员、北京物联网学会理事。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--pnid:gQcQ55tULDuikgmy8KfDei--><!-- ================= 研究方向 ================= -->
+<section data-page-node-id="unFAlJOKFCq4cSTT4zvjo1" class="section alt" id="research">
+  <div data-page-node-id="oSdqxyxqGpNqpLs8a5e02J" class="container">
+    <div data-page-node-id="RfqRcXFWnSIEoFGornUZ01" class="sec-head reveal">
+      <div data-page-node-id="ApCp9y4uIZ7C2HtViZwk55" class="sub"><!--pnid:S22aEP1YaDX5tHYWV2OSai-->Research Interests</div>
+      <h2 data-page-node-id="BLwiVhJZnqsmIDiL3e3QGL"><!--pnid:QrM9juWA7ZW0K3OdL9gasl-->研究方向</h2>
+      <div data-page-node-id="X18atrg17wjPFJsROPU2O1" class="bar"></div>
+    </div>
+    <div data-page-node-id="W1WrB2nkmTPgSdSvOfy7OK" class="rd-grid">
+      <div data-page-node-id="8OiWmFId6laikwvUqXK31j" class="rd-card reveal">
+        <div data-page-node-id="ysxtDmg94jkOxAluwpaDkA" class="rd-icon"><svg data-page-node-id="xGqhoO9g4VSrldKiZff1M7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle data-page-node-id="XSKnKhZclEJQHJAUToCkSS" cx="11" cy="11" r="7"/><path data-page-node-id="iKO7t7uip47XHElGTLJdUG" d="m20.5 20.5-4.2-4.2"/><path data-page-node-id="yY3j1Zqo5nBxbFjJi4jjeL" d="M8.6 9.4 7 11l1.6 1.6M13.4 9.4 15 11l-1.6 1.6"/></svg></div>
+        <h3 data-page-node-id="44SYuVzKVkpzy6zvPCsMJA"><!--pnid:gxoZ1E4LIXQNx1dgOlUqLT-->软硬件控制系统逆向工程与安全评测</h3>
+        <p data-page-node-id="IgDzMfodd1yvqeZOYfjVvp"><!--pnid:cPQ5fkGkkiz3VuIGr31mYA-->面向工业控制系统与嵌入式设备，开展协议与固件逆向分析、安全评测与漏洞挖掘。</p>
+        <div data-page-node-id="IgDzMfodd1yvqeZOYfjVvq" class="rd-sub"><span data-page-node-id="IgDzMfodd1yvqeZOYfjVv1">工控协议逆向</span><span data-page-node-id="IgDzMfodd1yvqeZOYfjVv2">大模型驱动的智能逆向</span><span data-page-node-id="IgDzMfodd1yvqeZOYfjVv3">工控协议漏洞挖掘</span><span data-page-node-id="IgDzMfodd1yvqeZOYfjVv4">工控设备漏洞挖掘</span></div>
+      </div>
+      <div data-page-node-id="VxloVyU9dX8XVX80iGNxKf" class="rd-card reveal">
+        <div data-page-node-id="Oz4ziTP0TQxoqQRmuFjbED" class="rd-icon"><svg data-page-node-id="6Zz8Ng01BayskRLGXCUvRJ" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path data-page-node-id="cQVBGEBY2h4R8KvSYFPT4E" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 data-page-node-id="HEUtjWdsuBOYiMjHVkQV7P"><!--pnid:3C6yySZurzvTWoj5KK1PNY-->传感器 / 执行器攻防测试</h3>
+        <p data-page-node-id="UDTZeb67IendBiFF2Nymbv"><!--pnid:F0sEFjF9b6v8nnJIUdKpKS-->利用声波共振、电磁耦合等原理对关键部件、元器件进行可靠性与攻击面分析，并开展红队测试与验证。</p>
+        <div data-page-node-id="UDTZeb67IendBiFF2Nymc1" class="rd-sub"><span data-page-node-id="UDTZeb67IendBiFF2Nymc2">敏感频率探测</span><span data-page-node-id="UDTZeb67IendBiFF2Nymc3">共振测试</span><span data-page-node-id="UDTZeb67IendBiFF2Nymc4">信号注入</span><span data-page-node-id="UDTZeb67IendBiFF2Nymc5">元器件异常监控</span></div>
+      </div>
+      <div data-page-node-id="5AYh0d6uObsErox4K3EFuN" class="rd-card reveal">
+        <div data-page-node-id="QJd9zI2tSmgvNfw934LhKL" class="rd-icon"><svg data-page-node-id="SpWoO6eS0MSgQemUSC9qmC" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect data-page-node-id="1t3VVWuz5XflngayyyZFfU" height="16" rx="2" width="16" x="4" y="4"/><rect data-page-node-id="dce6ttQZccDrnpALeNXp47" height="6" width="6" x="9" y="9"/><path data-page-node-id="dce6ttQZccDrnpALeNXp48" d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></div>
+        <h3 data-page-node-id="lFCE7ydNs7Gqs2Mqvq6wUc"><!--pnid:LAjd8a01wUmNoTIH0oSmtH-->基于芯片特性的固件安全增强</h3>
+        <p data-page-node-id="h5Iix79Zdaummq66TwSpsb"><!--pnid:UaucASxnOaGyKlXbnBS50o-->基于 TrustZone、DWT、PTA、Memory Tag 等芯片特性，结合程序分析，针对控制流、数据流、命令流完整性等目标，实现低开销的可靠防护。</p>
+        <div data-page-node-id="h5Iix79Zdaummq66TwSpc1" class="rd-sub"><span data-page-node-id="h5Iix79Zdaummq66TwSpc2">可信硬件</span><span data-page-node-id="h5Iix79Zdaummq66TwSpc3">DataWatchpoint</span><span data-page-node-id="h5Iix79Zdaummq66TwSpc4">控制流完整性</span><span data-page-node-id="h5Iix79Zdaummq66TwSpc5">命令流完整性</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:QvZZdbFW4QfTGdHc1DSQPQ--><!-- ================= 代表成果 ================= -->
+<section data-page-node-id="GIrdQvX2TspXnsXeWHpYRb" class="section" id="highlights">
+  <div data-page-node-id="tlAvkI02UOBDKnORwt3QUo" class="container">
+    <div data-page-node-id="Y9zo08dPlyArkrQMb1627v" class="sec-head reveal">
+      <div data-page-node-id="8yfOxgDonWJY3wUrIjsmoK" class="sub"><!--pnid:shOf0ULZyQOE0ZjKHAroik-->Selected Achievements</div>
+      <h2 data-page-node-id="M6GjivT5mF5zMw6X4p0eXr"><!--pnid:UR4DKxDyR8nVNDhnPNn7Jh-->代表性成果与影响力</h2>
+      <div data-page-node-id="7949PAgMVLZXNtTCDoSB2Q" class="bar"></div>
+    </div>
+    <div data-page-node-id="l1J8vaoa0eqBtYgkQZip0P" class="hl-list">
+      <div data-page-node-id="gOoKhLKQ6IOhOEzjP5Gh3m" class="hl-card reveal">
+        <div data-page-node-id="CQAyVweqdB6FoODWq0DGsk" class="hl-no"><!--pnid:icolFY6YCkREd35P99Kb4K-->01</div>
+        <div data-page-node-id="Aq0e0zPgDMoyh6bTRU36Qn" class="hl-body">
+          <h3 data-page-node-id="1AkMl183R6F5ESWC6EK2wl"><!--pnid:oIb3jZ4nCCnnMFJSaBz5XI-->工控协议系统性逆向分析</h3>
+          <p data-page-node-id="jUxRW9PiCQUvE7AvXJiQix"><!--pnid:OMYXOOzh0nnESNSPV6RVAc-->带领团队系统分析 <b data-page-node-id="eNJg7hHuWdk62we35x7Mpm"><!--pnid:ivxmi7aGUMenag1naAW7YE-->50 款典型工控协议</b><!--pnid:ewbfBgNUJrbF6NHzXrHDzO-->，完成施耐德、三菱 PLC、西门子、罗克韦尔等多个厂商设备的私有协议逆向分析，形成约 <b data-page-node-id="RLDromtxHNp8ON0SvFvAmj"><!--pnid:o01WvfShwb2U96s5G6Rhuf-->70 万字分析报告</b><!--pnid:jy7vnf9zvzeNZr41wJJU4N-->。部分成果发表于 CCF-A 类中文期刊《计算机研究与发展》，发表后收到中石油、国家电网等单位的合作邀请。</p>
+          <div data-page-node-id="4qc3CoioetAvke9qagjsgj"><span data-page-node-id="WqhswKiR0NHji1V9fRLAB1" class="kw"><!--pnid:udfXuUMkp6EO86jXLIiFGQ-->协议逆向</span><span data-page-node-id="YOHZ6EHCVrzialpgrQojir" class="kw"><!--pnid:0CbwJpLUtnghpBI7HRcNWJ-->施耐德</span><span data-page-node-id="gSxWu5yLmFeJ39KvEscoY2" class="kw"><!--pnid:h6dTWMEIylF7EKHS9SDBiU-->三菱 PLC</span><span data-page-node-id="ky6D5XQCYjgQaQuIIAIvU2" class="kw"><!--pnid:XusEno5N069Th1TED9O82K-->西门子</span><span data-page-node-id="oem2SmmIXvnIQVBCBS5fk6" class="kw"><!--pnid:VN5W1uz6SKzJES0xc9vcEN-->罗克韦尔</span></div>
+        </div>
+      </div>
+      <div data-page-node-id="lQJz9IbaO3Koa0t9x0lH8S" class="hl-card reveal">
+        <div data-page-node-id="houS5bFeo2SnnqkUC7AfxB" class="hl-no"><!--pnid:VufS5lW7etmj1ftyZiZD51-->02</div>
+        <div data-page-node-id="YitLFL4KdGY8z0UVOsRYcF" class="hl-body">
+          <h3 data-page-node-id="T4iBYQofQQ7laV28ErGint"><!--pnid:2r8DfRAqWGblWsQ1yJQ878-->安全测评方案获国际厂商认可</h3>
+          <p data-page-node-id="o9fnuW7EPBx019AtAYS49D"><!--pnid:pyG5SCbCMtLeoBrw4SF80H-->提出的安全测评方案已发现多项漏洞，获<b data-page-node-id="zgoqZFlp1VCvXyM45ySl10"><!--pnid:39nVazjfX5Y6LSsbvHMPGY-->三菱、ABB、ROKAE、GE、施耐德</b><!--pnid:Izb7WIRgu4Y7paHX2phhL5-->等厂商认可与致谢。其中 <b data-page-node-id="R6pr2vGooTckAg7dtIGrSR"><!--pnid:kXn4xgmhcPWy1kw2zw1gAd-->2 个高危漏洞（威胁评分 9.8）</b><!--pnid:8rm5OYkSWiy1KYFgICmVuh-->广泛影响 40 余款商业产品；某测试用例被 <b data-page-node-id="Tc3Sn6ltx3mI8nBO8IyZmV"><!--pnid:zpV2sJU8U6iaCWKAwiVs8F-->W3C 国际标准组织</b><!--pnid:ozqJoeLPUXHekwUsIj4aor-->收录并纳入标准测试集；某漏洞引起 WolfSSL 公司高度重视并主动发起在线视频讨论邀请。</p>
+          <div data-page-node-id="GXjTtFl7wq6wj7rUYoXV0Z"><span data-page-node-id="dbjPO6uywUyiGWMkXzQnh4" class="kw"><!--pnid:EvNr1JhPFgJcVXJQtulHJZ-->漏洞挖掘</span><span data-page-node-id="RIWUhrPIyhZ9DkAWnjhW37" class="kw"><!--pnid:EHbSFbLBQjjWQ7f6xShea2-->CVSS 9.8</span><span data-page-node-id="WieWVLhCzUgq2aEqRUYADW" class="kw"><!--pnid:poJbHhfI22rdqIORNtyD2G-->W3C 收录</span><span data-page-node-id="IDkFVaZO0xXf9BekI6Ois0" class="kw"><!--pnid:8neme6FYVGMhUQYQNfk5OV-->厂商致谢</span></div>
+        </div>
+      </div>
+      <div data-page-node-id="rbDkHRkA4URayISqmSHTrP" class="hl-card reveal">
+        <div data-page-node-id="2aTgJ2a9h1YDnFCP74dr2h" class="hl-no"><!--pnid:OCdCmNAa75ZDqlqzmf7OZ9-->03</div>
+        <div data-page-node-id="teNaTgspPJ1h5PA1wyyMAH" class="hl-body">
+          <h3 data-page-node-id="w8KVmo8aTPb70TVHFrU1dB"><!--pnid:1zl9hscfeQkIJjyU5snbDc-->智能程序逆向分析平台</h3>
+          <p data-page-node-id="1lP2ZuG8cEgqCsMzwVm3p0"><!--pnid:90GReWIt6TJqYf8Vw3f4da-->利用大语言模型的推理能力和多智能体协同设计，实现<b data-page-node-id="6BpMa4bcteu0gnBxef5WgE"><!--pnid:PUJu3V5WFT7485svsQvaxQ-->自动化目标程序逆向分析和攻防方案生成</b><!--pnid:ccu5S5hHbZiON0VNVYYekj-->。研发平台效果显著，支持二进制反编译、问答检索、CTF 解题，并自动生成分析报告以及测试验证代码生成等功能，多次演示。</p>
+          <div data-page-node-id="3BQ05T2CVpUFj2KGcEuK3t"><span data-page-node-id="wRx9wXaq5W3zTf0Kow3AiV" class="kw"><!--pnid:ey7wn2k4GgBCrdDypLeQ0E-->大语言模型</span><span data-page-node-id="0cjgJWbYS4EgQZczndmhOu" class="kw"><!--pnid:yzY4syDQXgRMyeGq4SY019-->多智能体协同</span><span data-page-node-id="zqrOwmVmjyv98fU70PzmKa" class="kw"><!--pnid:LfXIxHsikCneWSuJPjOlZz-->自动化逆向</span></div>
+        </div>
+      </div>
+      <div data-page-node-id="1dV6VVjEgBBfKKLe60CEoq" class="hl-card reveal">
+        <div data-page-node-id="2Cvm9OQ6IoC0YzLwNasEP2" class="hl-no"><!--pnid:2qCZuLtaOZMGfXcPu3HN7a-->04</div>
+        <div data-page-node-id="baiJwPjKIrkBECCGzO64CF" class="hl-body">
+          <h3 data-page-node-id="TKUIm7hdMPyx0oUgOe0VxZ"><!--pnid:mbHMRWtHT4F9O2pAItv3bE-->具身智能关键设备测试工具</h3>
+          <p data-page-node-id="VF57R1gyzdREir2uoVbQuP"><!--pnid:T4RrKAewth7RBXtaigsL98-->利用<b data-page-node-id="JEXspFVv8FDiL3NueggApL"><!--pnid:7mkZPeYuavvCUesxa43puQ-->声波共振和电磁耦合</b><!--pnid:HjOd1LifUPO4UVlRLmNgqo-->原理，对传感器/执行器、控制芯片晶振电路等重要部件进行可靠性分析，成果被<b data-page-node-id="YvW77RSFaNtm2Qn5kjVPzf"><!--pnid:p69Y3VSvHZFn6EuUSyuCBk-->国际顶会/顶刊收录</b><!--pnid:SdF4ukYov4lyMsr1JfC6A7-->。</p>
+          <div data-page-node-id="jXJMbkpB1eH10w6JZ9w1AB"><span data-page-node-id="7UYMDU2RyrK1hnIrSi6gjS" class="kw"><!--pnid:S4S0MYHixqsUKmHKYMYKPH-->声波共振</span><span data-page-node-id="NFNknWE4v5TIvi9T4EqXeX" class="kw"><!--pnid:SGagBFFF4vivceuQhywCv0-->电磁耦合</span><span data-page-node-id="dVrlrpjecCxFXeo9jHrOoX" class="kw"><!--pnid:oKSz3y4Q2aHSz4p0QGB8lD-->晶振电路</span><span data-page-node-id="B04v5jF6M7fEIt8aD8VVeR" class="kw"><!--pnid:EzKdibeRIqjUCYCJhEd2C3-->可靠性分析</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:EHimsMuUd7zmAv64hHArzs--><!-- ================= 科研项目 ================= -->
+<section data-page-node-id="nAisAgZMhg9D9iF7CeTOJL" class="section alt" id="projects">
+  <div data-page-node-id="SQauURCMrMXflZkjqYcHmm" class="container">
+    <div data-page-node-id="X5ecueMpcnHsq9LLtHTTYO" class="sec-head reveal">
+      <div data-page-node-id="1I4V0NRBPGt3qph0TBIV6d" class="sub"><!--pnid:hy9LLODFRQRHl69S9GnanE-->Research Projects</div>
+      <h2 data-page-node-id="EmdF4ciuh82qfqAKZPgpTW"><!--pnid:64tzKqtR3XSD9vEXVKZj3M-->主持 / 参与的主要科研项目</h2>
+      <div data-page-node-id="CjZPkNwvNTpXjZuJB8wk9u" class="bar"></div>
+    </div>
+    <div data-page-node-id="ZMNFKl3CbhhRIUdAoJXZZd" class="proj-list">
+      <div data-page-node-id="rmuVTCESMLIn9qL4BIwS85" class="proj-item reveal"><span data-page-node-id="UAqSaalfVbL3ysSnqttmft" class="proj-name"><!--pnid:aShSoNyFpz1HKp2NDEvq6D-->工业控制设备渗透测试</span><span data-page-node-id="yPgG51Et3jdZtl5eAnR7J4" class="proj-type"><!--pnid:6Rdt5ncULBACIky7zK3C5M-->横向项目</span><span data-page-node-id="o7x4mdi42HcLrAdRV6J42o" class="proj-role"><!--pnid:3LJ5bWeHve7wnM6jAfofno-->项目负责人</span><span data-page-node-id="4pOMjeCExNiBfPrwQ1hRoz" class="proj-date"><!--pnid:9adgLqhPS7PV9ms5mfDszn-->2024.8 – 2024.12</span></div>
+      <div data-page-node-id="NeFIdLEPjeI8qDXP71zBdg" class="proj-item reveal"><span data-page-node-id="VIoyGze9FdnURpfCYFR4Jh" class="proj-name"><!--pnid:Ki2S5V3VMjaVHeQBoxYZRc-->大模型驱动的程序分析技术研究</span><span data-page-node-id="2FlStjRjBtQSrby5e13HxC" class="proj-type"><!--pnid:EvfwczzaqM05VU2KqjiP9O-->纵向课题</span><span data-page-node-id="9BdCTr6Ww4p72ZRZksveJD" class="proj-role"><!--pnid:GmZgvwkXx7H2OGd3hWBX3R-->课题负责人</span><span data-page-node-id="APbAlgLOQ5JSdhtKBjKaBk" class="proj-date"><!--pnid:iNLC27zf67a6j6t3xtJQNr-->2026.3 – 2028.2</span></div>
+      <div data-page-node-id="Xi2stkLunsUUADxhhr6MkZ" class="proj-item reveal"><span data-page-node-id="PHM5s4B7g2xQEarJEXbuE4" class="proj-name"><!--pnid:ZbYzVr6ZhT3Q19qkbFvGHu-->感控设备带外信号漏洞挖掘</span><span data-page-node-id="YOhpkIgH3k0ZFFPjTsKuQk" class="proj-type"><!--pnid:k3qpP3P2Nzof8xhEEyYwSJ-->纵向项目</span><span data-page-node-id="V49AY7HuwHA2OSGHNSQiPt" class="proj-role"><!--pnid:x1Lvi7aZYldhYf88Px4dlH-->子课题负责人</span><span data-page-node-id="aCm9Zy0GRC6nASZij4VXDF" class="proj-date"><!--pnid:Xggpel8QU2CexQOwvTe6ES-->2026.3 – 2029.2</span></div>
+      <div data-page-node-id="uUVbCEiVszyYlCNGhJfzNs" class="proj-item reveal"><span data-page-node-id="5WS4gd7qsc2p0owT4NBJMH" class="proj-name"><!--pnid:heImmD10s00zvPpA7cSr4z-->工业控制系统主动安全防御</span><span data-page-node-id="4fXpqAWTYIdQBIQhIgsdyx" class="proj-type"><!--pnid:0EgYMP6z6gKRbA5dXmsasd-->人才计划</span><span data-page-node-id="POOQUFh4JF1TFsjTbuXcAA" class="proj-role"><!--pnid:SL8f2bgHhd2sYVC5JcL2HC-->项目负责人</span><span data-page-node-id="kQGT8mqxauymYKSz0XcL4s" class="proj-date"><!--pnid:EiMkScjZUb8TYTQ61zvVbY-->2024.7 – 2027.7</span></div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:TVgfrhJRQrEtp0krGnSjke--><!-- ================= 学习经历 ================= -->
+<section data-page-node-id="HVTjK5BPj66L1imXCytv14" class="section" id="education">
+  <div data-page-node-id="L3I4ugRHiDk3DwEAxD5e8W" class="container">
+    <div data-page-node-id="sF8bWDXyzTAfuirliU0ktE" class="sec-head reveal">
+      <div data-page-node-id="zncFhDWGd0Gn5xvdj3avcm" class="sub"><!--pnid:kJtu2iyUsUz7xwSVXEWMSI-->Education</div>
+      <h2 data-page-node-id="I937S5cHPnfJJzjr5ZFbcV"><!--pnid:0Vw7vO8ImxRMXlbnPAGVag-->学习经历</h2>
+      <div data-page-node-id="Wy0Ebhj5JQgbjxzIRSKdcd" class="bar"></div>
+    </div>
+    <div data-page-node-id="ns1KAT30JvnMrm3vDvVESP" class="timeline">
+      <div data-page-node-id="pFVuWVMRyzrdt6I42ZVbFw" class="tl-item reveal">
+        <div data-page-node-id="6e04ogpbRkIoHqvSUjwto7" class="tl-date"><!--pnid:KoZRtnChablHErR6C450WW-->2017.09 – 2024.06</div>
+        <div data-page-node-id="grLx1H7aNCqycu7NjqRJWn" class="tl-school"><!--pnid:vYdmywdpXWgSlcJYPafXUb-->中国科学院大学 · 博士</div>
+        <div data-page-node-id="EStJgSLpgfiSjUyCnIP6xS" class="tl-detail"><!--pnid:mbe3vaVtDSpWkOiNQJnN7r-->获<span data-page-node-id="B7mJxX9nFpsIwBqH1G9RHi" class="medal"><!--pnid:lelPRasbRX5U99rftAWX1O-->国家奖学金</span><!--pnid:kI4jNiWsZj8GAnkXFAcspO-->、<span data-page-node-id="BF8eo9qLmnza95iZcGNIhH" class="medal"><!--pnid:HZuFMVsij3KxtvkxLHpEQf-->留学基金委奖学金</span><!--pnid:T459pa8U03Dc4cswdVKxjW-->等</div>
+      </div>
+      <div data-page-node-id="5Jtw9UH9FN0z0e6H9xjamo" class="tl-item reveal">
+        <div data-page-node-id="ZEcFhyqx7skZconbXwdwJb" class="tl-date"><!--pnid:POQT79ktYJvYN6unQfXjVc-->2021.11 – 2023.04</div>
+        <div data-page-node-id="2oZ8RnC9RrsR2FUCxxZvia" class="tl-school"><!--pnid:Ms0vA4BtzmNmY2E9hAUwn2-->荷兰阿姆斯特丹自由大学 · 博士联合培养</div>
+        <div data-page-node-id="kX1ZfTxcNZzKwbtW6LZ8pY" class="tl-detail"><!--pnid:t4p2QGF6GBfps310C6hj2A-->国家留学基金委（CSC）资助</div>
+      </div>
+      <div data-page-node-id="eBeJ7wiXPd33RrzkiwMLQb" class="tl-item reveal">
+        <div data-page-node-id="9wdiQ6lwtugnJeSrSEu0NQ" class="tl-date"><!--pnid:OW8jNL4R0l6iOL3MgyEfrD-->2013.09 – 2017.06</div>
+        <div data-page-node-id="1nbVCoMUCrB5q9ng135gq2" class="tl-school"><!--pnid:hgDPbsY5OMm7iGNgC2jBvF-->武汉大学 · 本科</div>
+        <div data-page-node-id="BrJx9rggSQbYHvMZ6Ct4W8" class="tl-detail"><!--pnid:TPsKAp4lt7CHgnKM992OvG-->以前 <b data-page-node-id="33ghTmCcxmSVuo1aAAnzQo"><!--pnid:Td2swS8WEPQzweCD4eKG5h-->5%</b><!--pnid:ZopRlxZU17gyMylof7CXuf--> 成绩保研至中国科学院大学</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pnid:OM8fUaDKizpmUNfyLbu1ZQ--><!-- ================= 学术论文 ================= -->
+<section data-page-node-id="UyMG6N7sI4HP4NBvflc052" class="section alt" id="pubs">
+  <div data-page-node-id="OuFvhjbjq3haa1SSZXrdq7" class="container">
+    <div data-page-node-id="bNT6KjyiLwVcFN4uikt7Qg" class="sec-head reveal">
+      <div data-page-node-id="6Pj2IjNg5dQP5Z36qaBu0L" class="sub"><!--pnid:3voOfyXHVTWVAzrZercLeJ-->Publications</div>
+      <h2 data-page-node-id="FefB3zLXIBV0VDL4j2DIvf"><!--pnid:eLnTf0AuEZ5NBzcslA5zN7-->近五年代表性学术论文</h2>
+      <div data-page-node-id="GnYitwTpIuOOA5WYlTmA8Q" class="bar"></div>
+    </div>
+    <div data-page-node-id="d3Hs25NKjsIwqAHUMAH3Py" class="pub-list">
+      <div data-page-node-id="NeVWuvkq9VnEOte5vhUyZr" class="pub-item reveal">
+        <div data-page-node-id="vUqqPAEfIPvAUPOuiZPt3t" class="pub-title"><!--pnid:y6XrHp3fQMRVzQDi0FpwF2-->ADGFUZZ: Assignment Dependency-Guided Fuzzing for Robotic Vehicles</div>
+        <div data-page-node-id="UHBIyvXY2K6WTovpsKk4Qt" class="pub-authors"><!--pnid:7upJFNtUtVtoVHG7VnaD4q-->Yuncheng Wang, Yaowen Zheng, Puzhuo Liu, <span data-page-node-id="MsKt8GiRqhXiPCMM7VybLF" class="me"><!--pnid:re24HEKMULvx9QB0x1260t-->Dongliang Fang</span><!--pnid:ztGFhLwSJWcyGq1VAdjJLw-->*, Jiaxing Cheng, Dingyi Shi, Limin Sun</div>
+        <div data-page-node-id="JOkqLHf74F1JQFAcNwcA06" class="pub-meta"><span data-page-node-id="5oao1nfvxlZV8bHP8b4BFG" class="pub-venue"><!--pnid:XMHme3TlWVXzRxay2Sr9Cj-->NDSS 2026</span><span data-page-node-id="tr8lc7i7qWvhBQmxch2DOe" class="pub-year"><!--pnid:66tvTNiY2T4pblZQJT8SyN-->33rd Annual Network and Distributed System Security Symposium</span><span data-page-node-id="jISVgiFbkCg9m4qjhTxMzn" class="tag a"><!--pnid:98hCcXx8ThXH3fLgtdYqQB-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="ckuEhVqDq9TWEHeRjBgGPm" class="pub-item reveal">
+        <div data-page-node-id="LhIwa1cjvyilZInhE5XVNJ" class="pub-title"><!--pnid:fqK5y1fCT027kYeo51AWqP-->Advancing Binary Code Similarity Detection via Context-Content Fusion and LLM Verification</div>
+        <div data-page-node-id="Ig13oUUPtMINGJ2oL2ZbvB" class="pub-authors"><!--pnid:J98Vnv3QbkW5Mq4hoxFvQt-->Chaopeng Dong, Jingdong Guo, Shouguo Yang, Yi Li, <span data-page-node-id="ixXACioqhTIzYf9RFBCy5s" class="me"><!--pnid:su8OGEaFjKe94uJYqsTXPM-->Dongliang Fang</span><!--pnid:neBcj54fl8MJfgfc6HQZYG-->*, Yang Xiao*, Yongle Chen, Limin Sun</div>
+        <div data-page-node-id="801SOfTUk8FTZUKStIAFVb" class="pub-meta"><span data-page-node-id="Md7UiltgDW0U1mTMergVrB" class="pub-venue"><!--pnid:X2kLQXuSnC6RQkvjNv7ySQ-->ASE 2025</span><span data-page-node-id="a6CTfq9xoC4puuyQxfEHlD" class="pub-year"><!--pnid:nGsS2oXVw1lHUQoXbirlJe-->40th IEEE/ACM International Conference on Automated Software Engineering · pp. 304-316</span><span data-page-node-id="QksQCixQmvNLwDe6IMJAX2" class="tag a"><!--pnid:CqFeyNag8hWqhlc3RITFlR-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="4LGKPiBWGgIRRrLGDDLBj2" class="pub-item reveal">
+        <div data-page-node-id="SOzw9eSfkk3Md3fdqTz3pT" class="pub-title"><!--pnid:3ZNcMwShS8m3nyUZgWv7Al-->ICEPRE: ICS Protocol Reverse Engineering via Data-Driven Concolic Execution</div>
+        <div data-page-node-id="0MtN5OeRfEwpbNAiDCIrJJ" class="pub-authors"><!--pnid:VTbgTxyqmPfMQeCG2phvAm-->Yibo Qu, <span data-page-node-id="X717ypyzMYNOPEQ8k9gmtT" class="me"><!--pnid:QKeOb4glmZlynkGUObQS9j-->Dongliang Fang</span><!--pnid:oU87EHK8domIJK6zrSWzC9-->, Zhen Wang, Jiaxing Cheng, Shuaizong Si, Yongle Chen, Limin Sun</div>
+        <div data-page-node-id="pPmiYok3VM446JGcFaQ4GJ" class="pub-meta"><span data-page-node-id="Fcxw9igUrsSQxUupe2kkxV" class="pub-venue"><!--pnid:24bJ85Loyjmo4pKwOo8e0A-->ISSTA 2025</span><span data-page-node-id="btgueSQBl08d9QJIQc86HK" class="pub-year"><!--pnid:3VTCNsUHhWkUc8hJciHpPN-->Proceedings of the ACM on Software Engineering · pp. 2384-2406</span><span data-page-node-id="q9TW03SVvP3rgAqHTpttvk" class="tag a"><!--pnid:Nh9rtBJgfhrlIZODNeP49M-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="dEGXNdIjewaWLHzORKIdoT" class="pub-item reveal">
+        <div data-page-node-id="lkpIliQAQr1YIQsonh4KSx" class="pub-title"><!--pnid:athDsq8pHWN3o7LE2y3URt-->Emfuzz: Use Electromagnetic Fuzzing for Automated Attack Surface Assessment of Actuators</div>
+        <div data-page-node-id="Dsp7NWgdkMCTBnPaKAfXSB" class="pub-authors"><!--pnid:3GPV00MmtGIQtM1XTa4aCm-->Shiquan Dong, Zhi Li, Jianshuo Liu, Hong Li, <span data-page-node-id="QV0kfby5bWHpPgjMIEBJgH" class="me"><!--pnid:VpNMIYWy9JloSsiUKvZW8x-->Dongliang Fang</span><!--pnid:6parcgop760dDV75mysnq6-->, Shichao Lv, Haining Wang, Limin Sun</div>
+        <div data-page-node-id="Hi5fwqzcqyHKM49uR40nzh" class="pub-meta"><span data-page-node-id="yqG0BBlHsmJgdWKlBEhil4" class="pub-venue"><!--pnid:MUlk0hgDGDqFOrSbFcKxul-->IEEE TIFS 2025</span><span data-page-node-id="hpBb8zfdJK6GmtmpNHZ4XA" class="pub-year"><!--pnid:InWYdwfwkBe4xpe0N6CIph-->IEEE Transactions on Information Forensics and Security</span><span data-page-node-id="FYVvV7HoqZ9Qw0QKRKhmdr" class="tag a"><!--pnid:kLfMnH5VKsMCctnS5spUFe-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="rZSdlXDp7YKmhS8KfMDL0q" class="pub-item reveal">
+        <div data-page-node-id="VuX6BTVb4SRPUlaiRoupBS" class="pub-title"><!--pnid:enojYUWsX1nSEjszGVqXdu-->PREXP: Uncovering and Exploiting Security-Sensitive Objects in the Linux Kernel</div>
+        <div data-page-node-id="pWlG6EVuFhpSE2vggOmeS7" class="pub-authors"><!--pnid:qIC3JUKBFmcKHU96g7WOB4-->Zuxin Chen, Yaowen Zheng, Hong Li, Siyuan Li, Weijie Wang, <span data-page-node-id="rxmqYOyG2xSa19l1pVXW8B" class="me"><!--pnid:6tid697CIv2OmlUC5o67ev-->Dongliang Fang</span><!--pnid:Hfq4gnF6ZEOoyu4bnOBsJ4-->*, Zhiqiang Shi*, Limin Sun</div>
+        <div data-page-node-id="HtC6sRNbDTUHdnffdQFGcs" class="pub-meta"><span data-page-node-id="99OL0yWnsA6HZrXM0hLxEn" class="pub-venue"><!--pnid:z05cV1gK588izJbDsVYXhx-->IEEE TIFS 2025</span><span data-page-node-id="gpWUIy2YnJVLODMw4Wi7Rj" class="pub-year"><!--pnid:eneJ0SxdvkOpY9HaZ5CAGf-->IEEE Transactions on Information Forensics and Security</span><span data-page-node-id="zuyAWded3xFOpjGZdDqLHh" class="tag a"><!--pnid:7tP3K7dDITygido7kja9zm-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="Jx4Efj7acpCy51acPJSAMJ" class="pub-item reveal">
+        <div data-page-node-id="xwvvHZEoeU2L0ge7nJ6wFe" class="pub-title"><!--pnid:CdlGO3UpJQhUzOOmYTqIG8-->CNCFuzzer: Directed Blackbox Fuzzing of Computer Numerical Control System Based on Message Behaviour Guidance</div>
+        <div data-page-node-id="wIzLtOhC7vvOzzo2r5W2Jv" class="pub-authors"><!--pnid:8vTSA6W20eLhHSZkMUTW1O-->Zedong Li, <span data-page-node-id="4sZvTfBFXK8KEY2XbN1YWb" class="me"><!--pnid:zR60MTsmdfu5HQDMdnr2i1-->Dongliang Fang</span><!--pnid:fyIK8ZhXHKQrmOGCTvkBLY-->, Yuqi Chen, Shijie Li, Jiaqian Peng, Zhanwei Song, Shichao Lv, Limin Sun</div>
+        <div data-page-node-id="j0ZTscUlwUaiouLZlhtkgG" class="pub-meta"><span data-page-node-id="daE8nzF2bUeiLiUXm3urLu" class="pub-venue"><!--pnid:QKFV5JdyGou7Nun0q5ImCk-->ACM TOSEM 2025</span><span data-page-node-id="yk5BS9fpyQTk2Ol10XA2jE" class="pub-year"><!--pnid:0yGodjie0ndTE7Am3eZRSc-->ACM Transactions on Software Engineering and Methodology</span><span data-page-node-id="hXmfyKUTE73Huilhb3KzlE" class="tag a"><!--pnid:8mazEce1tKiqV0nxoxFI3k-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="MzwlZxBBCm462vKc0JcGcf" class="pub-item reveal">
+        <div data-page-node-id="wR0KfSmTctgD7LhSa1JFdh" class="pub-title"><!--pnid:avrR2P8IQFKOd03iCm9UID-->InvisiGuard: Data Integrity for Microcontroller-Based Devices via Hardware-Triggered Write Monitoring</div>
+        <div data-page-node-id="YpiSS6INiFGLUcSpYo6WWo" class="pub-authors"><span data-page-node-id="UK1o4EpWM6icdCI1h6rvQT" class="me"><!--pnid:glSZhlgdM0AXsUe9we81PK-->Dongliang Fang</span><!--pnid:qMNGmBOdokCXf0aIsAeB1G-->, Anni Peng, Le Guan, Erik van der Kouwe, Klaus von Gleissenthall, Wenwen Wang, Yuqing Zhang, Limin Sun</div>
+        <div data-page-node-id="WaJK39wD7vM19rFxEKRNf9" class="pub-meta"><span data-page-node-id="5o8OfIyhkMBgSudzATJ8Sn" class="pub-venue"><!--pnid:a0bkaz3zt6t2xim8oO5Nas-->IEEE TDSC 2024</span><span data-page-node-id="32NsHlcB3ESBlBWP4HLIWX" class="pub-year"><!--pnid:OZSI12Bh1N4kche5cF95UA-->IEEE Transactions on Dependable and Secure Computing · pp. 343-358</span><span data-page-node-id="fOWQsoCDfZsiyUOYlNaowd" class="tag a"><!--pnid:6tS5plRLkM3UeAnwqwdReG-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="fJNwQejk0FhU7zWWYZdJf2" class="pub-item reveal">
+        <div data-page-node-id="VHQvGNyugoLAPKfjH0h8AX" class="pub-title"><!--pnid:Y8tNiN91H8y2MQDuMMOt2J-->Bitmap-Based Security Monitoring for Deeply Embedded Systems</div>
+        <div data-page-node-id="sBRDFTV6nkKKS5Ud5sO80r" class="pub-authors"><!--pnid:Owr6CMIHptlQaMFQqRqeFY-->Anni Peng, <span data-page-node-id="kPn5qX292saCwCBGFdPU5O" class="me"><!--pnid:LUVWRjmbBinHQOBmSIHcof-->Dongliang Fang</span><!--pnid:hOsdrZytkvpL5LkMqiWw7K-->, Le Guan, Erik, WenWen Wang, Limin Sun, Yuqing Zhang</div>
+        <div data-page-node-id="H9RxdRmBOWxhrSvefhRY4O" class="pub-meta"><span data-page-node-id="BCBOmY0qoIHbo3GiYlLCPm" class="pub-venue"><!--pnid:WdNFx3TzxjHizqLOKssmD8-->ACM TOSEM 2024</span><span data-page-node-id="cbXhcQWy6FHiXwlUeofJFP" class="pub-year"><!--pnid:3692krU1e1rgGM77GtPpU2-->ACM Transactions on Software Engineering and Methodology · 33(7): 1-31</span><span data-page-node-id="7dfYxT7gfxxaaJEfIos3Qi" class="tag a"><!--pnid:175F7uSVZLZzjnTPQZ3iXu-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="4brJmy7fuoGAodMp1D7I1t" class="pub-item reveal">
+        <div data-page-node-id="wNORmmy259apIwAXeTM3ft" class="pub-title"><!--pnid:PO1xMIaEt3TIhalZQwXAPW-->FITS: Inferring Mediate Taint Sources for Effective Vulnerability Analysis of IoT Device Firmware</div>
+        <div data-page-node-id="HeDqWV3Qpr431NC7y4BSdI" class="pub-authors"><!--pnid:nPabOcB4qkfOOsxTIh1JMx-->Puzhuo Liu, Yaowen Zheng, Chengnian Sun, <span data-page-node-id="P0OQ3BTNeKMfg1W0Q0lmG2" class="me"><!--pnid:lSIWTQMnxW3DrSeHhatvGj-->Dongliang Fang</span><!--pnid:UaSnbmi488JKgppqwOEqe8-->, Mingdong Liu, Limin Sun</div>
+        <div data-page-node-id="VZtSFrg322jGmWUXTZCzZ4" class="pub-meta"><span data-page-node-id="SQxz1JkEs4WWUuLumjt1nL" class="pub-venue"><!--pnid:HNt5Fk2L5ShY7kJMNF6bY8-->ASPLOS 2023</span><span data-page-node-id="PXiHXtZYQakMT4SGWT8MYT" class="pub-year"><!--pnid:mIhZteJrvOJWfXjGh53Mjc-->ACM International Conference on Architectural Support for Programming Languages and Operating Systems · pp. 138-152</span><span data-page-node-id="joKWONLX9CGp82DlCpZCnE" class="tag a"><!--pnid:Oh6i1g7akPvmzKsctFKyl7-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="jsTmTrucNgYs8sNKiNXfuD" class="pub-item reveal">
+        <div data-page-node-id="bHWiWNBX47KsXLVjLsmhtL" class="pub-title zh"><!--pnid:bQJZEIsq0k4KFEqAW1bQR1-->工业控制系统协议安全综述</div>
+        <div data-page-node-id="yukhB7gbSHNbK2UxjbME6u" class="pub-authors"><span data-page-node-id="jJhOoyqbt9TDyC1zN17Gmc" class="me"><!--pnid:GEhdSYeUZvCvrcAKCgcZK7-->方栋梁</span><!--pnid:bm101G1wxcKbJAa5S3QfFB-->，刘圃卓，秦川，宋站威，孙玉砚，石志强，孙利民</div>
+        <div data-page-node-id="5JSdxc78kJom9ryd7Q1Pok" class="pub-meta"><span data-page-node-id="d4ZZFGrQPkiYf8fZ4mir29" class="pub-venue"><!--pnid:tq7KBtEIAaAJYUOgrvHHIu-->《计算机研究与发展》2022</span><span data-page-node-id="Xa71bXFBkBFkEM1yEAeKr0" class="pub-year"><!--pnid:cn3cYH4DyrK80a9KAfuZNU-->59(5): 978-993</span><span data-page-node-id="MHJly3v5zsb1rbtq2q34Bd" class="tag a"><!--pnid:m50H5bZvylkrCegYwfvlc8-->CCF-A</span></div>
+      </div>
+      <div data-page-node-id="LkZfu6LgeMMBZDFLwzzAJf" class="pub-item reveal">
+        <div data-page-node-id="O8DVJZTSq50eboa5Z6CHZi" class="pub-title"><!--pnid:ED9SUTMu3dYpreTHa5gbJp-->ICS3fuzzer: A Framework for Discovering Protocol Implementation Bugs in ICS Supervisory Software by Fuzzing</div>
+        <div data-page-node-id="sSEekrInynQyqPyi0uX7TF" class="pub-authors"><span data-page-node-id="uBHjfXPwhinrQRzYgbd2mx" class="me"><!--pnid:e8NqJO5v4xaZOwPnGL5Qfx-->Dongliang Fang</span><!--pnid:ibPgnp7sINTF2CYG6YV7jC-->, Zhanwei Song, Le Guan, Puzhuo Liu, Anni Peng, Kai Cheng, Yaowen Zheng, Peng Liu, Hongsong Zhu, Limin Sun</div>
+        <div data-page-node-id="kL4F63cVE4gLUzqygSK5Dq" class="pub-meta"><span data-page-node-id="auy498uTzz1tKaOGb2cXOy" class="pub-venue"><!--pnid:yGbM1rynzTJeSNDSOKkEHZ-->ACSAC 2021</span><span data-page-node-id="XHWvB8czHHCzZVwwpqpPdg" class="pub-year"><!--pnid:3Pr8LtEwgjbxnhGVDt3LOq-->37th Annual Computer Security Applications Conference · pp. 849-860</span><span data-page-node-id="aBWS3rR6nyxuxyVmoe1Jtx" class="tag b"><!--pnid:6YVjIpFBklNpblYAEYkm7r-->CCF-B</span></div>
+      </div>
+    </div>
+    <div data-page-node-id="xanUxbO1AJe8h2g7PyQIHq" class="pub-note reveal" style="margin-top:16px; font-size:13px; color:#8a94a6"><!--pnid:cxSub1dInXONdo4KIjJNbj-->注：作者名中 * 为通讯作者；论文按发表时间倒序排列。</div>
+  </div>
+</section>
+
+<!--pnid:68cKzpk5GSDgEEnqlG6tJM--><!-- ================= FOOTER ================= -->
+<footer data-page-node-id="XVVXAk1i415BA1cSn3mXWj" class="footer" id="contact">
+  <div data-page-node-id="GC8tg5NnSoz6vzvxcxp723" class="footer-inner">
+    <div data-page-node-id="H51NQzJoVrvSbO4spjgDD0">
+      <h3 data-page-node-id="ltzRTeSasEQYHfSf9N139k"><!--pnid:Wrk5rZqxPe5x9MWB0SuvzX-->联系方式 · Contact</h3>
+      <div data-page-node-id="csMUx23wL0HeVj2kOKfF5N" class="fc">
+        <svg data-page-node-id="29MpgrPMhtDBkGywRTC9Oq" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect data-page-node-id="S5Mpq4XMi2Gvph8Yc41pZW" height="16" rx="2" width="20" x="2" y="4"/><path data-page-node-id="PLiCJ2IyWhXCJxp432fTge" d="m22 7-10 6L2 7"/></svg>
+        <a data-page-node-id="SUg5kQG9jiRdCs4po9yUKF" href="mailto:fangdongliang@iie.ac.cn"><!--pnid:4qpbSGhgVeXfLkOLBqFtg9-->fangdongliang@iie.ac.cn</a>
+      </div>
+      <div data-page-node-id="262gxJzDB5CHzj9ZgwCPX8" class="fc">
+        <svg data-page-node-id="1GpOOBzIrYbLHkoiXRJisX" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path data-page-node-id="UPIUkRqt2J4C6OAIdDklCw" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle data-page-node-id="iSozgV1RydwLpL3fHD3pkQ" cx="12" cy="10" r="3"/></svg><!--pnid:UnvPUlvSO43y1J5pkdOPn8-->
+        北京市海淀区树村路19号 · 邮编 100085
+      </div>
+    </div>
+    <div data-page-node-id="M25094FpCoSa9ut0f90EaZ" style="text-align:right">
+      <div data-page-node-id="MO5LfeVBSrNZ0Mn8RnUKel" style="color:#dbe7f5; font-weight:600; letter-spacing:1px; margin-bottom:6px"><!--pnid:ZVMqfHo2mPIEsVatzbYajO-->方栋梁 Fang Dongliang</div>
+      <div data-page-node-id="miBQ8vrXA7jkEMP2qvalv5" style="font-size:13px"><!--pnid:mlWgt61tnv6uWpkZ4lBHG7-->中国科学院信息工程研究所</div>
+      <div data-page-node-id="jAEr9KiWkMz6WQYHj65xrH" style="font-size:13px"><!--pnid:E3xasi8Usz3yyTleabS7A1-->博后-预聘副研究员 · 硕士生导师</div>
+    </div>
+  </div>
+</footer>
+
+<script data-page-node-id="byGhbCkv3icYIpssttLlSH" data-pnid-children="AJO1dM3gJ4Q9jstcQPtIiZ">
+  // 导航阴影
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+  }, {passive:true});
+
+  // 移动端菜单
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  // 滚动渐显动画
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
